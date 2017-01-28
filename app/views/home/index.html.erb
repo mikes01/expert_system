@@ -1,0 +1,299 @@
+<h1>What programming language should You use?</h1>
+
+<div class="row col-md-10 col-offset-md-1">
+  <%= form_tag('/home', id: "form", remote: true, authenticity_token: true) do %>
+
+    <fieldset>
+        <legend>1. Type system</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[typed]" value="statically"/> Statically typed
+          </label>
+          <br>
+          <label>
+              <input type="radio" name="facts[typed]" value="dynamically"/> Dynamically typed
+          </label>
+          <br>
+          <label>
+              <input type="radio" name="facts[typed]" value="neutral" checked="checked"/> n/a
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>2. Inheritance</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[type_inheritance]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[type_inheritance]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[type_inheritance]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>3. Encapsulation</legend>
+          <div class="options">
+          <label>
+              <input type="radio" name="facts[encapsulation]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[encapsulation]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[encapsulation]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>4. Mutation</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[mutation]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[mutation]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[mutation]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>5. Side effects</legend>
+          <div class="options">
+          <label>
+              <input type="radio" name="facts[side_effects]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[side_effects]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[side_effects]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>6. Pattern matching</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[pattern_matching]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[pattern_matching]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[pattern_matching]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>7. Lambdas</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[lambdas]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[lambdas]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[lambdas]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>8. Type inference</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[type_inference]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[type_inference]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[type_inference]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>9. Duck typing</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[duck_typing]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[duck_typing]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[duck_typing]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>10. Simple syntax</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[simple_syntax]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[simple_syntax]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[simple_syntax]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>11. Clear documentation</legend>
+        <div class="options">
+        <label>
+            <input type="radio" name="facts[clear_documentation]" value="yes"/> yes
+        </label>
+        <label>
+            <input type="radio" name="facts[clear_documentation]" value="neutral" checked="checked"/> n/a
+        </label>
+        <label>
+            <input type="radio" name="facts[clear_documentation]" value="no"/> no
+        </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>12. Actors</legend>
+        <div class="options">
+        <label>
+            <input type="radio" name="facts[actors]" value="yes"/> yes
+        </label>
+        <label>
+            <input type="radio" name="facts[actors]" value="neutral" checked="checked"/> n/a
+        </label>
+        <label>
+            <input type="radio" name="facts[actors]" value="no"/> no
+        </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>13. Lazy evaluation</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[lazy_evaluation]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[lazy_evaluation]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[lazy_evaluation]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>14. Macros</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[macros]" value="yes"/> yes
+          </label>
+          <label>
+              <input type="radio" name="facts[macros]" value="neutral" checked="checked"/> n/a
+          </label>
+          <label>
+              <input type="radio" name="facts[macros]" value="no"/> no
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>15. Considered platform</legend>
+        <div class="options">
+          <label>
+              <input type="checkbox" name="facts[platform]" value="mobile" checked="checked"/> Mobile
+          </label>
+          <label>
+              <input type="checkbox" name="facts[platform]" value="web" checked="checked"/> Web
+          </label>
+          <label>
+              <input type="checkbox" name="facts[platform]" value="neutral" checked="checked"/>
+              n/a
+          </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>16. Resulting code</legend>
+        <div class="options">
+          <label>
+              <input type="radio" name="facts[type]" value="run_directly" /> Machine code
+          </label>
+          <br>
+          <label>
+              <input type="radio" name="facts[type]" value="virtual_machine" /> Byte code run on virtual machine
+          </label>
+          <br>
+          <label>
+              <input type="radio" name="facts[type]" value="interpreted" /> Interpreted
+          </label>
+          <br>
+          <label>
+              <input type="radio" name="facts[type]" value="neutral" checked="checked" /> n/a
+          </label>
+        </div>
+    </fieldset>
+  <% end %>
+
+<div id="suggestion-pane">
+    <h3>Suggestions:</h3>
+    <ul id="suggestion-list">
+    </ul>
+</div>
+
+<script>
+      var updateState = function(){
+              var valuesToSubmit = JSON.stringify($('#form').serializeObject());
+              $.ajax({
+                  url: '/home.json',
+                  type: 'POST',
+                  data: valuesToSubmit,
+                  dataType: 'JSON',
+                  contentType: 'application/json; charset=utf-8',
+                  async: false,
+                  success : updateSuggestions,
+                  error : function(XMLHttpRequest, textStatus, errorThrown) {
+                      alert('There was an error.' + textStatus + ' ' + errorThrown);
+                  }
+              });
+              return false; // prevents normal behaviour
+      };
+
+      var updateSuggestions = function(suggestions){
+        var list = $('#suggestion-list');
+        list.empty();
+        $.each(suggestions, function(i)
+        {
+            var li = $('<li/>')
+                    .addClass('ui-menu-item')
+                    .attr('role', 'menuitem')
+                    .appendTo(list);
+            $('<a/>')
+                    .addClass('ui-all')
+                    .text(suggestions[i])
+                    .appendTo(li);
+        });
+      };
+
+      $("#form").find("input").on("change", updateState);
+      updateState();
+</script>
+</div>
